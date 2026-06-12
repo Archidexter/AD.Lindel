@@ -1,0 +1,65 @@
+AD.Lindel — Лицензия / License
+==============================
+
+Copyright © 2026 Archidexter. Все права защищены. / All rights reserved.
+
+Автор и единственный правообладатель: Archidexter.
+Разработка начата в конце мая 2026 года; впервые представлена публично 30 мая 2026 года
+(в сообществе сборки STB, под прежним названием «AD.NNPC HUB»). Релизы на GitHub — с июня 2026.
+«AD.NNPC HUB» и «AD.Lindel» — одна и та же программа того же автора.
+Официальный источник: https://github.com/Archidexter/AD.Lindel
+Любые копии под другим авторством или с другой лицензией не авторизованы.
+
+Author and sole copyright holder: Archidexter.
+Development started in late May 2026; first shown publicly on 30 May 2026 (in the STB build
+community, under the earlier name "AD.NNPC HUB"). GitHub releases since June 2026.
+"AD.NNPC HUB" and "AD.Lindel" are the same program by the same author.
+Official source: https://github.com/Archidexter/AD.Lindel
+Any copy under different authorship or a different license is not authorized.
+
+
+РУССКИЙ
+
+Эта лицензия распространяется на программу AD.Lindel (лаунчер) и наши материалы к ней:
+скрипты установки, патчи, локализацию и пресеты. Программа распространяется бесплатно.
+
+Разрешается:
+  • любому человеку бесплатно скачивать и использовать программу — без оплаты,
+    без ключей и без паролей;
+  • копировать и передавать её другим в неизменном виде, вместе с этим файлом лицензии.
+
+Запрещается без письменного разрешения автора:
+  • продавать программу или брать плату за доступ к ней;
+  • выдавать её за свою работу;
+  • изменять её и распространять изменённые версии;
+  • использовать название и оформление «AD.Lindel» для других продуктов.
+
+Сторонние модификации, которые программа скачивает и настраивает (SkyrimNet,
+SeverActions, IntelEngine и другие), НЕ являются частью этой программы и остаются
+под собственными лицензиями их авторов. Настоящая лицензия на них не распространяется.
+
+Программа предоставляется «как есть», без каких-либо гарантий. Автор не несёт
+ответственности за любой ущерб, прямой или косвенный, связанный с её использованием.
+
+
+ENGLISH
+
+This license covers the AD.Lindel program (the launcher) and its accompanying
+materials: install scripts, patches, localization and presets. The program is free.
+
+You may:
+  • download and use the program free of charge — no fee, no key, no password;
+  • copy and share it with others unmodified, together with this license file.
+
+Without the author's written permission you may NOT:
+  • sell the program or charge for access to it;
+  • claim it as your own work;
+  • modify it or distribute modified versions;
+  • use the "AD.Lindel" name or look for other products.
+
+Third-party modifications that the program downloads and configures (SkyrimNet,
+SeverActions, IntelEngine and others) are NOT part of this program and remain under
+their own authors' licenses. This license does not apply to them.
+
+The program is provided "as is", without warranty of any kind. The author is not
+liable for any damage, direct or indirect, arising from its use.
