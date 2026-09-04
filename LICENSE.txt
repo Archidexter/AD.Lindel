@@ -4,6 +4,9 @@ AD.Lindel — Лицензия / License
 Copyright © 2026 Archidexter. Все права защищены. / All rights reserved.
 
 Автор и единственный правообладатель: Archidexter.
+AD.Lindel — лаунчер для Skyrim Special Edition, Anniversary Edition и VR: ставит и настраивает
+моды ИИ-диалогов (SkyrimNet и Mantella), их зависимости, локальную и облачную озвучку и, по
+желанию, нейросеть на вашем собственном компьютере.
 Разработка начата в конце мая 2026 года; впервые представлена публично 30 мая 2026 года
 (в сообществе сборки STB, под прежним названием «AD.NNPC HUB»). Релизы на GitHub — с июня 2026.
 «AD.NNPC HUB» и «AD.Lindel» — одна и та же программа того же автора.
@@ -11,6 +14,9 @@ Copyright © 2026 Archidexter. Все права защищены. / All rights 
 Любые копии под другим авторством или с другой лицензией не авторизованы.
 
 Author and sole copyright holder: Archidexter.
+AD.Lindel is a launcher for Skyrim Special Edition, Anniversary Edition and VR: it installs and
+configures the AI-dialogue mods (SkyrimNet and Mantella), their dependencies, local and cloud
+voice engines and, if you want it, a neural model running on your own PC.
 Development started in late May 2026; first shown publicly on 30 May 2026 (in the STB build
 community, under the earlier name "AD.NNPC HUB"). GitHub releases since June 2026.
 "AD.NNPC HUB" and "AD.Lindel" are the same program by the same author.
@@ -20,46 +26,102 @@ Any copy under different authorship or a different license is not authorized.
 
 РУССКИЙ
 
-Эта лицензия распространяется на программу AD.Lindel (лаунчер) и наши материалы к ней:
-скрипты установки, патчи, локализацию и пресеты. Программа распространяется бесплатно.
+Эта лицензия распространяется на программу AD.Lindel (лаунчер) и на то, что написано для неё:
+правила установки, патчи, локализацию, пресеты, интерфейс и тексты. Программа распространяется
+автором на Boosty — по подписке или при покупке поста.
 
 Разрешается:
-  • любому человеку бесплатно скачивать и использовать программу — без оплаты,
-    без ключей и без паролей;
-  • копировать и передавать её другим в неизменном виде, вместе с этим файлом лицензии.
+  • использовать программу тому, кто получил её от автора;
+  • держать её личные копии для себя, вместе с этим файлом лицензии.
 
 Запрещается без письменного разрешения автора:
+  • передавать программу другим людям, выкладывать её в открытый доступ или
+    распространять любым иным способом;
   • продавать программу или брать плату за доступ к ней;
   • выдавать её за свою работу;
   • изменять её и распространять изменённые версии;
   • использовать название и оформление «AD.Lindel» для других продуктов.
 
-Сторонние модификации, которые программа скачивает и настраивает (SkyrimNet,
-SeverActions, IntelEngine и другие), НЕ являются частью этой программы и остаются
-под собственными лицензиями их авторов. Настоящая лицензия на них не распространяется.
+Программа не перевыкладывает чужое. Всё стороннее она скачивает на ваш компьютер в момент
+установки — с исходных источников их авторов. Эти материалы не входят в программу и остаются под
+собственными лицензиями своих авторов; настоящая лицензия на них не распространяется. Это:
+  • SkyrimNet (MinLL) — мод ИИ-диалогов, и наши спутники к нему SeverActions и IntelEngine:
+    у них нет открытой лицензии, поэтому лаунчер их только скачивает, а свои правки применяет
+    у вас на компьютере после установки;
+  • Mantella (art-from-the-machine, peteben, Leidtier) — второй мод ИИ-диалогов: её программа
+    под AGPL-3.0, игровая часть и плагин под MIT. Лаунчер её НЕ РАЗДАЁТ: он открывает страницу
+    авторов на Nexus, откуда вы её и скачиваете;
+  • SKSE64 и SKSEVR — расширитель скриптов игры;
+  • Address Library for SKSE Plugins и VR Address Library, powerofthree's Papyrus Extender,
+    PapyrusUtil, JContainers, UIExtensions, SkyUI, Prisma UI, Native EditorID Fix,
+    Backported Extended ESL Support (BEES), Media Keys Fix, Skyrim VR ESL Support —
+    библиотеки и расширения, на которые опираются эти моды;
+  • FonixData (генерация движения губ) — нужен Mantella;
+  • Mod Organizer 2 — менеджер модов; лаунчер может поставить его портативную сборку;
+  • Microsoft Visual C++ Redistributable — компонент Microsoft, ставится её же установщиком;
+  • голоса Piper и данные espeak-ng — только некоммерческое использование;
+  • модели распознавания речи Whisper и модель поиска по смыслу all-MiniLM-L6-v2 (Apache-2.0);
+  • XTTS (сборка на основе coqui-ai-TTS) и OmniTTS (jagerius/OmniTTS + модель k2-fsa/OmniVoice) —
+    локальные серверы озвучки;
+  • Ollama и llama.cpp — если вы выбрали нейросеть на своём компьютере.
+Вместе с самой программой поставляются только три чужие вещи: 7-Zip (7zr.exe, LGPL), загрузчик
+WebView2 (условия Microsoft для распространяемых компонентов) и шрифты Spectral и Nunito Sans
+(SIL Open Font License 1.1) в папке lib\fonts.
 
-Программа предоставляется «как есть», без каких-либо гарантий. Автор не несёт
-ответственности за любой ущерб, прямой или косвенный, связанный с её использованием.
+Ключи к сервисам ИИ — ваши. Программа хранит их только на вашем компьютере и не передаёт никуда,
+кроме выбранного вами провайдера. Расходы по этим ключам несёте вы. То же и с ключом Nexus: он
+нужен только для того, чтобы моды скачивались внутри лаунчера, и уходит только на Nexus.
+
+Программа предоставляется «как есть», без каких-либо гарантий. Автор не несёт ответственности за
+любой ущерб, прямой или косвенный, связанный с её использованием.
 
 
 ENGLISH
 
-This license covers the AD.Lindel program (the launcher) and its accompanying
-materials: install scripts, patches, localization and presets. The program is free.
+This license covers the AD.Lindel program (the launcher) and what was written for it: its install
+rules, patches, localization, presets, interface and texts. The program is distributed by the
+author on Boosty — by subscription or by buying the post.
 
 You may:
-  • download and use the program free of charge — no fee, no key, no password;
-  • copy and share it with others unmodified, together with this license file.
+  • use the program if you received it from the author;
+  • keep personal copies of it for yourself, together with this license file.
 
 Without the author's written permission you may NOT:
+  • pass the program on to other people, publish it or distribute it in any other way;
   • sell the program or charge for access to it;
   • claim it as your own work;
   • modify it or distribute modified versions;
   • use the "AD.Lindel" name or look for other products.
 
-Third-party modifications that the program downloads and configures (SkyrimNet,
-SeverActions, IntelEngine and others) are NOT part of this program and remain under
-their own authors' licenses. This license does not apply to them.
+The program does not re-host other people's work. Everything third-party is downloaded onto your
+machine at install time, from its authors' own sources. Those materials are not part of this
+program and remain under their own authors' licenses; this license does not apply to them. Namely:
+  • SkyrimNet (MinLL) — the AI-dialogue mod, and our companions to it, SeverActions and
+    IntelEngine: they carry no open license, so the launcher only downloads them and applies our
+    patches on your machine after the install;
+  • Mantella (art-from-the-machine, peteben, Leidtier) — the second AI-dialogue mod: its program
+    under AGPL-3.0, the game part and the plugin under MIT. The launcher does NOT distribute it:
+    it opens its authors' Nexus page, and you download it from there;
+  • SKSE64 and SKSEVR — the game's script extender;
+  • Address Library for SKSE Plugins and VR Address Library, powerofthree's Papyrus Extender,
+    PapyrusUtil, JContainers, UIExtensions, SkyUI, Prisma UI, Native EditorID Fix, Backported
+    Extended ESL Support (BEES), Media Keys Fix, Skyrim VR ESL Support — the libraries and
+    extensions those mods rely on;
+  • FonixData (lip-sync generation) — required by Mantella;
+  • Mod Organizer 2 — the mod manager; the launcher can set up its portable build;
+  • Microsoft Visual C++ Redistributable — a Microsoft component, installed by its own installer;
+  • the Piper voices and espeak-ng data — non-commercial use only;
+  • the Whisper speech-recognition models and the all-MiniLM-L6-v2 embedding model (Apache-2.0);
+  • XTTS (a build on top of coqui-ai-TTS) and OmniTTS (jagerius/OmniTTS + the k2-fsa/OmniVoice
+    model) — the local voice servers;
+  • Ollama and llama.cpp — if you chose to run the model on your own PC.
+Only three third-party things ship with the program itself: 7-Zip (7zr.exe, LGPL), the WebView2
+loader (under Microsoft's terms for redistributable components) and the Spectral and Nunito Sans
+fonts (SIL Open Font License 1.1) in lib\fonts.
 
-The program is provided "as is", without warranty of any kind. The author is not
-liable for any damage, direct or indirect, arising from its use.
+Your AI service keys are yours. The program keeps them on your machine only and sends them nowhere
+except the provider you chose. Their cost is yours. The same goes for the Nexus key: it exists only
+so mods can download inside the launcher, and it goes to Nexus and nowhere else.
+
+The program is provided "as is", without warranty of any kind. The author is not liable for any
+damage, direct or indirect, arising from its use.
