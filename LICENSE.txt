@@ -1,0 +1,211 @@
+AD.Lindel — Лицензия / License
+==============================
+
+Copyright © 2026 Archidexter. Все права защищены. / All rights reserved.
+
+Автор и единственный правообладатель: Archidexter.
+AD.Lindel — лаунчер для Skyrim Special Edition, Anniversary Edition и VR: ставит и настраивает
+моды ИИ-диалогов (SkyrimNet и Mantella), их зависимости, локальную и облачную озвучку и, по
+желанию, нейросеть на вашем собственном компьютере.
+Разработка начата в конце мая 2026 года; впервые представлена публично 30 мая 2026 года
+(в сообществе сборки STB, под прежним названием «AD.NNPC HUB»). Релизы на GitHub — с июня 2026.
+«AD.NNPC HUB» и «AD.Lindel» — одна и та же программа того же автора.
+Официальный источник: https://github.com/Archidexter/AD.Lindel
+Любые копии под другим авторством или с другой лицензией не авторизованы.
+
+Author and sole copyright holder: Archidexter.
+AD.Lindel is a launcher for Skyrim Special Edition, Anniversary Edition and VR: it installs and
+configures the AI-dialogue mods (SkyrimNet and Mantella), their dependencies, local and cloud
+voice engines and, if you want it, a neural model running on your own PC.
+Development started in late May 2026; first shown publicly on 30 May 2026 (in the STB build
+community, under the earlier name "AD.NNPC HUB"). GitHub releases since June 2026.
+"AD.NNPC HUB" and "AD.Lindel" are the same program by the same author.
+Official source: https://github.com/Archidexter/AD.Lindel
+Any copy under different authorship or a different license is not authorized.
+
+
+РУССКИЙ
+
+1. Программа
+------------
+Эта лицензия распространяется на программу AD.Lindel (лаунчер) и на то, что написано для неё:
+правила установки, патчи, локализацию, пресеты, интерфейс и тексты. Программа распространяется
+автором на Boosty — по подписке или при покупке поста.
+
+Разрешается:
+  • использовать программу тому, кто получил её от автора;
+  • держать её личные копии для себя, вместе с этим файлом лицензии.
+
+Запрещается без письменного разрешения автора:
+  • передавать программу другим людям, выкладывать её в открытый доступ или
+    распространять любым иным способом;
+  • продавать программу или брать плату за доступ к ней;
+  • выдавать её за свою работу;
+  • изменять её и распространять изменённые версии;
+  • использовать название и оформление «AD.Lindel» для других продуктов.
+
+2. Чужие материалы
+------------------
+Лаунчер — это установщик. Моды, программы, модели и голоса других авторов не входят в
+программу: он скачивает их на ваш компьютер в момент установки. На них настоящая лицензия не
+распространяется — каждый остаётся под лицензией своего автора, и вы получаете его на её
+условиях. Подписка на Boosty даёт доступ только к программе AD.Lindel: всё перечисленное ниже
+лежит в открытом доступе, бесплатно и без регистрации, и автор лаунчера платы за это не берёт.
+
+2.1. С источников авторов лаунчер берёт:
+  • SkyrimNet (MinLL) и моды-спутники к нему SeverActions (Severause) и IntelEngine (galanx) —
+    с GitHub. Открытой лицензии у них нет, поэтому лаунчер их нигде не хранит: он скачивает их
+    с выпусков авторов, а свои правки применяет у вас на компьютере после установки;
+  • SKSE64 и SKSEVR — с сайта авторов;
+  • Address Library for SKSE Plugins, powerofthree's Papyrus Extender, PapyrusUtil,
+    JContainers, UIExtensions, SkyUI, Backported Extended ESL Support (BEES), Media Keys Fix,
+    FonixData — с Nexus Mods;
+  • VR Address Library, Skyrim VR ESL Support, SkyUI VR, Prisma UI, Native EditorID Fix,
+    Mfg Fix NG (GPL-3.0), Mod Organizer 2 (GPL-3.0) — с GitHub;
+  • Microsoft Visual C++ Redistributable — с сайта Microsoft, ставится её же установщиком;
+  • модели распознавания речи Whisper (MIT) — с Hugging Face (ggerganov/whisper.cpp);
+    модель поиска по смыслу all-MiniLM-L6-v2 (Apache-2.0) — с Hugging Face;
+  • Ollama (MIT) — с GitHub; модели нейросети Ollama скачивает сама из своего каталога, у
+    каждой модели своя лицензия. К LM Studio, llama.cpp и KoboldCpp лаунчер только
+    подключается, если они у вас уже запущены, и не ставит их.
+
+2.2. Часть файлов лаунчер берёт с наших зеркал — открытых копий, которые автор лаунчера
+держит, чтобы установка не вставала, когда источник недоступен, режет скорость или упирается
+в дневной лимит: датасет Hugging Face Archidexter/adlindel-assets, выпуск models-v1 на GitHub
+и Google Drive. Там лежат:
+  • Mantella (mantella/SSE_Lindel_Mantella.7z) в нашей сборке из открытых исходников:
+      – игровая часть — из art-from-the-machine/Mantella-Spell (MIT), исходники скриптов лежат
+        рядом со скриптами; плагин SKSE_HTTP — из выпуска Leidtier/SKSE_HTTP (MIT);
+      – программа — из art-from-the-machine/Mantella (GNU AGPL-3.0), с нашими правками и
+        голосами Piper; её полные исходники и список наших правок («НАШИ ПРАВКИ.txt») лежат в
+        том же архиве, в папке sources рядом с программой;
+  • XTTS — сервер озвучки: неизменённая сборка langfod/skyrimnet-tts v0.1.10
+    (https://github.com/langfod/skyrimnet-tts; основа — coqui-ai-TTS, MPL-2.0), веса модели
+    Coqui XTTS-v2 (Coqui Public Model License 1.0.0) и наши образцы голосов для русской речи;
+  • OmniTTS — сервер озвучки: jagerius/OmniTTS, модель k2-fsa/OmniVoice (код — Apache-2.0,
+    веса — CC BY-NC), встроенный Python (лицензия PSF) и наш мост к SkyrimNet;
+  • русские голоса Piper для SkyrimNet — готовые модели rhasspy/piper-voices под другими
+    именами: irina (данные RHVoice) и ruslan (корпус RUSLAN, CC BY-NC-SA 4.0), с данными
+    espeak-ng (GPL-3.0);
+  • модели Whisper small, large-v3 и large-v3-turbo (MIT) и модель all-MiniLM-L6-v2
+    (Apache-2.0) — копии без изменений, сверенные с официальным источником;
+  • Ollama — неизменённая копия архива разработчика (MIT), текст лицензии лежит рядом.
+
+2.3. Только некоммерческое использование разрешают: модель XTTS-v2 (Coqui Public Model
+License), модель OmniVoice (CC BY-NC), голос Piper ruslan (CC BY-NC-SA 4.0) и голос irina
+(данные RHVoice). Используйте их и созданную ими речь для себя, в игре; не продавайте их
+и не используйте для заработка.
+
+2.4. Правообладателям. Если вы автор материала с наших зеркал и не хотите, чтобы он лежал
+там, — напишите в Issues (https://github.com/Archidexter/AD.Lindel/issues) или на Boosty
+(https://boosty.to/ad.tile): копия будет убрана, и лаунчер будет брать файл только с вашего
+источника.
+
+3. Что поставляется вместе с программой
+---------------------------------------
+Внутри самой программы — только наш код и три чужие вещи: 7-Zip (7zr.exe, LGPL), загрузчик
+WebView2 (условия Microsoft для распространяемых компонентов) и шрифты Spectral и Nunito Sans
+(SIL Open Font License 1.1) — шрифты встроены в программу, их условия лежат в папке
+lib\third-party.
+
+4. Ключи и ответственность
+--------------------------
+Ключи к сервисам ИИ — ваши. Программа хранит их только на вашем компьютере и не передаёт никуда,
+кроме выбранного вами провайдера. Расходы по этим ключам несёте вы. То же и с ключом Nexus: он
+нужен только для того, чтобы моды скачивались внутри лаунчера, и уходит только на Nexus.
+
+Программа предоставляется «как есть», без каких-либо гарантий. Автор не несёт ответственности за
+любой ущерб, прямой или косвенный, связанный с её использованием.
+
+
+ENGLISH
+
+1. The program
+--------------
+This license covers the AD.Lindel program (the launcher) and what was written for it: its install
+rules, patches, localization, presets, interface and texts. The program is distributed by the
+author on Boosty — by subscription or by buying the post.
+
+You may:
+  • use the program if you received it from the author;
+  • keep personal copies of it for yourself, together with this license file.
+
+Without the author's written permission you may NOT:
+  • pass the program on to other people, publish it or distribute it in any other way;
+  • sell the program or charge for access to it;
+  • claim it as your own work;
+  • modify it or distribute modified versions;
+  • use the "AD.Lindel" name or look for other products.
+
+2. Third-party materials
+------------------------
+The launcher is an installer. Other authors' mods, programs, models and voices are not part of
+the program: it downloads them onto your machine at install time. This license does not apply to
+them — each stays under its own author's license, and you receive it on those terms. A Boosty
+subscription gives access to the AD.Lindel program only: everything listed below is publicly
+available, free of charge and without registration, and the launcher's author charges nothing
+for it.
+
+2.1. From its authors' own sources the launcher takes:
+  • SkyrimNet (MinLL) and its companion mods SeverActions (Severause) and IntelEngine (galanx) —
+    from GitHub. They carry no open license, so the launcher keeps no copies of them: it downloads
+    them from the authors' releases and applies our patches on your machine after the install;
+  • SKSE64 and SKSEVR — from the authors' site;
+  • Address Library for SKSE Plugins, powerofthree's Papyrus Extender, PapyrusUtil, JContainers,
+    UIExtensions, SkyUI, Backported Extended ESL Support (BEES), Media Keys Fix, FonixData —
+    from Nexus Mods;
+  • VR Address Library, Skyrim VR ESL Support, SkyUI VR, Prisma UI, Native EditorID Fix,
+    Mfg Fix NG (GPL-3.0), Mod Organizer 2 (GPL-3.0) — from GitHub;
+  • Microsoft Visual C++ Redistributable — from Microsoft, installed by its own installer;
+  • the Whisper speech-recognition models (MIT) — from Hugging Face (ggerganov/whisper.cpp);
+    the all-MiniLM-L6-v2 embedding model (Apache-2.0) — from Hugging Face;
+  • Ollama (MIT) — from GitHub; Ollama downloads the AI models itself from its own library, and
+    each model has its own license. LM Studio, llama.cpp and KoboldCpp are only connected to if
+    you already run them; the launcher does not install them.
+
+2.2. Some files come from our mirrors — public copies the launcher's author keeps so the install
+does not stall when a source is down, throttled or hits a daily quota: the Hugging Face dataset
+Archidexter/adlindel-assets, the models-v1 release on GitHub and Google Drive. They hold:
+  • Mantella (mantella/SSE_Lindel_Mantella.7z), our build from the open sources:
+      – the game part from art-from-the-machine/Mantella-Spell (MIT), with the script sources next
+        to the scripts; the SKSE_HTTP plugin from the Leidtier/SKSE_HTTP release (MIT);
+      – the program from art-from-the-machine/Mantella (GNU AGPL-3.0), with our changes and Piper
+        voices; its complete sources and the list of our changes ("НАШИ ПРАВКИ.txt") are in the
+        same archive, in the sources folder next to the program;
+  • XTTS — a voice server: the unmodified langfod/skyrimnet-tts v0.1.10 build
+    (https://github.com/langfod/skyrimnet-tts; based on coqui-ai-TTS, MPL-2.0), the Coqui XTTS-v2
+    model weights (Coqui Public Model License 1.0.0) and our voice samples for russian speech;
+  • OmniTTS — a voice server: jagerius/OmniTTS, the k2-fsa/OmniVoice model (code Apache-2.0,
+    weights CC BY-NC), an embedded Python (PSF license) and our bridge to SkyrimNet;
+  • russian Piper voices for SkyrimNet — stock rhasspy/piper-voices models under other names:
+    irina (RHVoice data) and ruslan (RUSLAN corpus, CC BY-NC-SA 4.0), with espeak-ng data
+    (GPL-3.0);
+  • the Whisper small, large-v3 and large-v3-turbo models (MIT) and the all-MiniLM-L6-v2 model
+    (Apache-2.0) — unmodified copies, checked against the official source;
+  • Ollama — an unmodified copy of the developer's archive (MIT), with the license text next to it.
+
+2.3. Non-commercial use only: the XTTS-v2 model (Coqui Public Model License), the OmniVoice
+model (CC BY-NC), the Piper voice ruslan (CC BY-NC-SA 4.0) and the voice irina (RHVoice data).
+Use them and the speech they produce for yourself, in the game; do not sell them or use them to
+make money.
+
+2.4. For rights holders. If you are the author of something on our mirrors and do not want it
+there, write in Issues (https://github.com/Archidexter/AD.Lindel/issues) or on Boosty
+(https://boosty.to/ad.tile): the copy will be removed and the launcher will take the file from
+your source only.
+
+3. What ships with the program
+------------------------------
+The program itself contains only our code and three third-party things: 7-Zip (7zr.exe, LGPL),
+the WebView2 loader (under Microsoft's terms for redistributable components) and the Spectral and
+Nunito Sans fonts (SIL Open Font License 1.1) — the fonts are embedded in the program, their terms
+are in lib\third-party.
+
+4. Keys and liability
+---------------------
+Your AI service keys are yours. The program keeps them on your machine only and sends them nowhere
+except the provider you chose. Their cost is yours. The same goes for the Nexus key: it exists only
+so mods can download inside the launcher, and it goes to Nexus and nowhere else.
+
+The program is provided "as is", without warranty of any kind. The author is not liable for any
+damage, direct or indirect, arising from its use.
