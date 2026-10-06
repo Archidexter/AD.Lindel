@@ -2,6 +2,8 @@
 
 Оживляет NPC в ваших сборках Skyrim — установщик и менеджер ИИ-диалогов (SkyrimNet + SeverActions + IntelEngine) для Skyrim Special Edition 1.5.97 и Anniversary Edition 1.6.x.
 
+Сайт: [archidexter.ru/lindel](https://archidexter.ru/lindel/)
+
 ## Установка
 
 1. Скачайте `AD.Lindel.zip` на странице автора на **[Boosty](https://boosty.to/ad.tile)** — по подписке или при покупке поста. В этом репозитории архивов программы нет.
@@ -24,5 +26,7 @@
 ---
 
 > Brings the NPCs in your Skyrim builds to life — an installer for the AI-dialogue mods (SkyrimNet and Mantella) and everything they need, on Skyrim SE 1.5.97 / AE 1.6.x / VR. Download `AD.Lindel.zip` from the author's Boosty (https://boosty.to/ad.tile) — there are no program archives in this repository — then right-click → Properties → **Unblock**, unzip, run `AD.Lindel.exe`. Self-updating.
+>
+> Website: https://archidexter.ru/en/lindel/
 >
 > © 2026 Archidexter, all rights reserved. Distributed by the author on Boosty — by subscription or by buying the post; see [LICENSE.txt](LICENSE.txt). Third-party mods, models and voices keep their own licenses and are downloaded free of charge from their authors' sources or our public mirrors — see LICENSE.txt, section 2.
