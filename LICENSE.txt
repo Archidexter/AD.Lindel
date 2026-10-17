@@ -104,7 +104,7 @@ License), модель OmniVoice (CC BY-NC), голос Piper ruslan (CC BY-NC-S
 
 2.4. Правообладателям. Если вы автор материала с наших зеркал и не хотите, чтобы он лежал
 там, — напишите в Issues (https://github.com/Archidexter/AD.Lindel/issues) или на Boosty
-(https://boosty.to/ad.tile): копия будет убрана, и лаунчер будет брать файл только с вашего
+(https://boosty.to/archidexter): копия будет убрана, и лаунчер будет брать файл только с вашего
 источника.
 
 3. Что поставляется вместе с программой
@@ -203,7 +203,7 @@ make money.
 
 2.4. For rights holders. If you are the author of something on our mirrors and do not want it
 there, write in Issues (https://github.com/Archidexter/AD.Lindel/issues) or on Boosty
-(https://boosty.to/ad.tile): the copy will be removed and the launcher will take the file from
+(https://boosty.to/archidexter): the copy will be removed and the launcher will take the file from
 your source only.
 
 3. What ships with the program
