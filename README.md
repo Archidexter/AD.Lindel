@@ -6,7 +6,7 @@
 
 ## Установка
 
-1. Скачайте `AD.Lindel.zip` на странице автора на **[Boosty](https://boosty.to/ad.tile)** — по подписке или при покупке поста. В этом репозитории архивов программы нет.
+1. Скачайте `AD.Lindel.zip` на странице автора на **[Boosty](https://boosty.to/archidexter)** — по подписке или при покупке поста. В этом репозитории архивов программы нет.
 2. ПКМ по архиву → **Свойства** → внизу поставьте галочку **«Разблокировать»** → **ОК** *(Windows помечает скачанные файлы — это убирает лишние предупреждения системы)*.
 3. Распакуйте в любую папку и запустите **`AD.Lindel.exe`**.
 4. Дальше — по инструкции внутри лаунчера. Лаунчер обновляется сам.
@@ -25,7 +25,7 @@
 
 ---
 
-> Brings the NPCs in your Skyrim builds to life — an installer for the AI-dialogue mods (SkyrimNet and Mantella) and everything they need, on Skyrim SE 1.5.97 / AE 1.6.x / VR. Download `AD.Lindel.zip` from the author's Boosty (https://boosty.to/ad.tile) — there are no program archives in this repository — then right-click → Properties → **Unblock**, unzip, run `AD.Lindel.exe`. Self-updating.
+> Brings the NPCs in your Skyrim builds to life — an installer for the AI-dialogue mods (SkyrimNet and Mantella) and everything they need, on Skyrim SE 1.5.97 / AE 1.6.x / VR. Download `AD.Lindel.zip` from the author's Boosty (https://boosty.to/archidexter) — there are no program archives in this repository — then right-click → Properties → **Unblock**, unzip, run `AD.Lindel.exe`. Self-updating.
 >
 > Website: https://archidexter.ru/en/lindel/
 >
